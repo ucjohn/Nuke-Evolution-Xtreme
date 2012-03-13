@@ -42,24 +42,24 @@ function cache_header() {
     $cache_good_img = (is_writable(NUKE_CACHE_DIR) && !ini_get('safe_mode')) ? "<img src='images/evo/ok.png' alt='' width='10' height='10' />" : "<img src='images/evo/bad.png' alt='' width='10' height='10' />";
     $cache_good = (ini_get('safe_mode')) ? "<font color=red>" . _CACHESAFEMODE . "</font>" : $cache_good;
     switch ($cache->type) {
-    	case FILE_CACHE:
-    		$cache_type = _CACHE_FILEMODE;
-    	break;
-    	case SQL_CACHE:
-    		$cache_type = _CACHE_SQLMODE;
-    	break;
-    	case XCACHE:
-    		$cache_type = 'XCache';
-    	break;
-    	case APC_CACHE:
-    		$cache_type = 'APC';
-    	break;
-    	case MEMCACHED:
-    		$cache_type = 'Memcached';
-    	break;
-    	default:
-    		$cache_type =  _CACHE_DISABLED;
-    	break;
+        case FILE_CACHE:
+            $cache_type = _CACHE_FILEMODE;
+        break;
+        case SQL_CACHE:
+            $cache_type = _CACHE_SQLMODE;
+        break;
+        case XCACHE:
+            $cache_type = 'XCache';
+        break;
+        case APC_CACHE:
+            $cache_type = 'APC';
+        break;
+        case MEMCACHED:
+            $cache_type = 'Memcached';
+        break;
+        default:
+            $cache_type =  _CACHE_DISABLED;
+        break;
     }
         OpenTable();
     echo "<div align=\"center\">\n<a href=\"$admin_file.php?op=cache\">" . _CACHE_HEADER . "</a></div>\n";
@@ -104,22 +104,22 @@ function cache_header() {
 }
 
 function get_cache_types() {
-	$out = '';
+    $out = '';
 
-	if (is_writable(NUKE_CACHE_DIR)) {
-		$out .= 'File <br />';
-	}
-	if (extension_loaded('apc')) {
-		$out .= 'APC <br />';
-	}
-	if (extension_loaded('memcache')) {
-		$out .= 'Memcached <br />';
-	}
-	if (extension_loaded('XCache')) {
-		$out .= 'XCache <br />';
-	}
+    if (is_writable(NUKE_CACHE_DIR)) {
+        $out .= 'File <br />';
+    }
+    if (extension_loaded('apc')) {
+        $out .= 'APC <br />';
+    }
+    if (extension_loaded('memcache')) {
+        $out .= 'Memcached <br />';
+    }
+    if (extension_loaded('XCache')) {
+        $out .= 'XCache <br />';
+    }
 
-	return $out;
+    return $out;
 }
 
 function display_main() {
@@ -198,7 +198,7 @@ function delete_cache($file, $name) {
             if ($cache->delete($file, $name)) {
                 echo "<center>\n";
                 echo "<strong>" . _CACHE_FILE_DELETE_SUCC . "</strong><br /><br />\n";
-				redirect("$admin_file.php?op=cache");
+                redirect("$admin_file.php?op=cache");
                 echo "</center>\n";
             } else {
                 echo "<center>\n";
@@ -253,20 +253,26 @@ function cache_view($file, $name) {
 }
 
 function clear_cache() {
-    global $admin_file, $cache;
-        OpenTable();
-            if($cache->clear()) {
-                    echo "<center>\n";
-                    echo "<strong>" . _CACHE_CLEARED_SUCC . "</strong><br /><br />\n";
-                    redirect("$admin_file.php?op=cache");
-                    echo "</center>\n";
-            } else {
-                    echo "<center>\n";
-                    echo "<strong>" . _CACHE_CLEARED_FAIL . "</strong><br /><br />\n";
-                    redirect("$admin_file.php?op=cache");
-                    echo "</center>\n";
-            }
-        CloseTable();
+    global $db, $prefix, $admin_file, $cache;
+    
+    OpenTable();
+    
+    if ($cache->clear()) {
+        // Update the last cleared time stamp
+        $db->sql_query("UPDATE `" . $prefix . "_evolution` SET evo_value='" . time() . "' WHERE evo_field='cache_last_cleared'");
+        
+        echo "<center>\n";
+        echo "<strong>" . _CACHE_CLEARED_SUCC . "</strong><br /><br />\n";
+        redirect("$admin_file.php?op=cache");
+        echo "</center>\n";
+    } else {
+        echo "<center>\n";
+        echo "<strong>" . _CACHE_CLEARED_FAIL . "</strong><br /><br />\n";
+        redirect("$admin_file.php?op=cache");
+        echo "</center>\n";
+    }
+    
+    CloseTable();
 }
 
 function usrclearcache($opt) {

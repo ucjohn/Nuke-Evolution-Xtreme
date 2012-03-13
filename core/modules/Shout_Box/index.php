@@ -221,10 +221,10 @@ function searchHistory($where, $sbsearchtext, $results, $style, $order, $page) {
                         if (!empty($row['timestamp'])) {
                             // reads unix timestamp && formats it to the viewer's timezone
                             if (is_user()) {
-                                $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                                $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                                 echo "<br />$unixTime";
                             } else {
-                                $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                                $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                                 echo "<br />$unixTime";
                             }
                         } else {
@@ -240,10 +240,10 @@ function searchHistory($where, $sbsearchtext, $results, $style, $order, $page) {
                         if (!empty($row['timestamp'])) {
                             // reads unix timestamp && formats it to the viewer's timezone
                             if (is_user()) {
-                                $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                                $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                                 echo "<br />$unixTime";
                             } else {
-                                $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                                $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                                 echo "<br />$unixTime";
                             }
                         } else {
@@ -273,10 +273,10 @@ function searchHistory($where, $sbsearchtext, $results, $style, $order, $page) {
                             if (!empty($row['timestamp'])) {
                                 // reads unix timestamp && formats it to the viewer's timezone
                                 if (is_user()) {
-                                    $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                                    $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                                     echo $unixTime;
                                 } else {
-                                    $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                                    $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                                     echo "$unixTime";
                                 }
                             } else {
@@ -302,10 +302,10 @@ function searchHistory($where, $sbsearchtext, $results, $style, $order, $page) {
                             if (!empty($row['timestamp'])) {
                                 // reads unix timestamp && formats it to the viewer's timezone
                                 if (is_user()) {
-                                    $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                                    $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                                     echo $unixTime;
                                 } else {
-                                    $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                                    $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                                     echo $unixTime;
                                 }
                             } else {
@@ -325,10 +325,10 @@ function searchHistory($where, $sbsearchtext, $results, $style, $order, $page) {
                         if (!empty($row['timestamp'])) {
                             // reads unix timestamp && formats it to the viewer's timezone
                             if (is_user()) {
-                                $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                                $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                                 echo "<br />$unixTime";
                             } else {
-                                $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                                $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                                 echo "<br />$unixTime";
                             }
                         } else {
@@ -787,10 +787,10 @@ function showHistory($page) {
                     if (!empty($row['timestamp'])) {
                         // reads unix timestamp && formats it to the viewer's timezone
                         if (is_user()) {
-                            $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                            $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                             echo "<br />$unixTime";
                         } else {
-                            $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                            $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                             echo "<br />$unixTime";
                         }
                     } else {
@@ -806,10 +806,10 @@ function showHistory($page) {
                     if (!empty($row['timestamp'])) {
                         // reads unix timestamp && formats it to the viewer's timezone
                         if (is_user()) {
-                            $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                            $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                             echo "<br />$unixTime";
                         } else {
-                            $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                            $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                             echo "<br />$unixTime";
                         }
                     } else {
@@ -839,10 +839,10 @@ function showHistory($page) {
                         if (!empty($row['timestamp'])) {
                             // reads unix timestamp && formats it to the viewer's timezone
                             if (is_user()) {
-                                $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                                $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                                 echo $unixTime;
                             } else {
-                                $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                                $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                                 echo $unixTime;
                             }
                         } else {
@@ -868,10 +868,10 @@ function showHistory($page) {
                         if (!empty($row['timestamp'])) {
                             // reads unix timestamp && formats it to the viewer's timezone
                             if (is_user()) {
-                                $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                                $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                                 echo "$unixTime";
                             } else {
-                                $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                                $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                                 echo $unixTime;
                             }
                         } else {
@@ -891,10 +891,10 @@ function showHistory($page) {
                     if (!empty($row['timestamp'])) {
                             // reads unix timestamp && formats it to the viewer's timezone
                         if (is_user()) {
-                            $unixTime = shout_create_date($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
+                            $unixTime = EvoDate($userinfo['user_dateformat'], $row['timestamp'], $userinfo['user_timezone']);
                             echo "<br />$unixTime";
                         } else {
-                            $unixTime = shout_create_date($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
+                            $unixTime = EvoDate($board_config['default_dateformat'], $row['timestamp'], $board_config['board_timezone']);
                             echo "<br />$unixTime";
                         }
                     } else {

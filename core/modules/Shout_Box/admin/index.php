@@ -1392,7 +1392,7 @@ function censoractive($censoroption) {
 }
 
 function addcensor($addcensor, $addcensorr) {
-    global $prefix, $db, $admin_file;
+    global $prefix, $db, $admin_file, $cache;
     $sql = "INSERT INTO `".$prefix."_shoutbox_censor` (text, replacement) VALUES ('$addcensor','$addcensorr')";
     $db->sql_query($sql);
     $cache->delete('censor', 'shoutbox');
@@ -1402,7 +1402,7 @@ function addcensor($addcensor, $addcensorr) {
 }
 
 function updatecensor($censornr, $idn, $censornw, $listnum) {
-    global $prefix, $db, $admin_file;
+    global $prefix, $db, $admin_file, $cache;
     for ($x = 1; $x <= $listnum; $x++) {
         $sql = "UPDATE `".$prefix."_shoutbox_censor` SET `id`='$idn[$x]', `text`='$censornw[$x]', `replacement`='$censornr[$x]' WHERE `id`='$idn[$x]'";
         $db->sql_query($sql);
