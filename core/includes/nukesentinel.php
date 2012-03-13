@@ -172,7 +172,7 @@ if($ab_config['prevent_dos'] == 1 AND !stristr($_SERVER['PHP_SELF'], "backend.ph
 // Site Switch Check
 if($ab_config['site_switch'] == 1 AND !stristr($_SERVER['PHP_SELF'], $admin_file.".php") AND !is_admin() && !defined('NO_DISABLE')) {
   $display_page = abget_template($ab_config['site_reason']);
-  $display_page = eregi_replace("</body>", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL."</div>\n</body>", $display_page);
+  $display_page = preg_replace("/<\/body>/i", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL."</div>\n</body>", $display_page);
   die($display_page);
 }
 
@@ -236,19 +236,19 @@ if($ab_config['proxy_switch'] == 1) {
   //Lite:
   if($ab_config['proxy_switch'] == 1 AND ($proxy1 != "none" OR $proxy2 != "none")) {
     $display_page = abget_template($ab_config['proxy_reason']);
-    $display_page = eregi_replace("</body>", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
+    $display_page = preg_replace("/<\/body>/i", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
     die($display_page);
   }
   //Mild:
   if($ab_config['proxy_switch'] == 2 AND ($proxy1 != "none" OR $proxy2 != "none" OR stristr($proxy_host,"proxy"))) {
     $display_page = abget_template($ab_config['proxy_reason']);
-    $display_page = eregi_replace("</body>", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
+    $display_page = preg_replace("/<\/body>/i", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
     die($display_page);
   }
   //Strong:
   if($ab_config['proxy_switch'] == 3 AND ($proxy1 != "none" OR $proxy2 != "none" OR stristr($proxy_host,"proxy") OR $proxy0 == $proxy_host)) {
     $display_page = abget_template($ab_config['proxy_reason']);
-    $display_page = eregi_replace("</body>", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
+    $display_page = preg_replace("/<\/body>/i", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
     die($display_page);
   }
 }
@@ -1031,7 +1031,7 @@ function is_god($admin) {
 
 function abget_template($template="") {
   global $sitename, $adminmail, $ab_config, $nsnst_const, $db, $prefix, $ip, $abmatch;
-  if (!empty($template) && ereg('.php', $template)) $template = '';
+  if (!empty($template) && preg_match('/\.php/', $template)) $template = '';
   if(empty($template)) { $template = "abuse_default.tpl"; }
   //$sitename = $nuke_config['sitename'];
   //$adminmail = $nuke_config['adminmail'];
@@ -1091,7 +1091,7 @@ function blocked($blocked_row="", $blocker_row="") {
     } else {
       $display_page = str_replace("__DATEEXPIRES__", _AB_UNKNOWN, $display_page);
     }
-    $display_page = eregi_replace("</body>", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
+    $display_page = preg_replace("/<\/body>/i", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
     die($display_page);
   } else {
     $display_page = abget_template();
@@ -1101,7 +1101,7 @@ function blocked($blocked_row="", $blocker_row="") {
     } else {
       $display_page = str_replace("__DATEEXPIRES__", _AB_PERMENANT, $display_page);
     }
-    $display_page = eregi_replace("</body>", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
+    $display_page = preg_replace("/<\/body>/i", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
     die($display_page);
   }
 }
@@ -1126,7 +1126,7 @@ function blockedrange($blockedrange_row="") {
     } else {
       $display_page = str_replace("__DATEEXPIRES__", _AB_UNKNOWN, $display_page);
     }
-    $display_page = eregi_replace("</body>", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
+    $display_page = preg_replace("/<\/body>/i", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
     die($display_page);
   } else {
     $display_page = abget_template();
@@ -1136,7 +1136,7 @@ function blockedrange($blockedrange_row="") {
     } else {
       $display_page = str_replace("__DATEEXPIRES__", _AB_PERMENANT, $display_page);
     }
-    $display_page = eregi_replace("</body>", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
+    $display_page = preg_replace("/<\/body>/i", "<hr noshade='noshade' />\n<div align='right'>"._AB_NUKESENTINEL." ".$ab_config['version_number']." "._AB_BYNSN."</div>\n</body>", $display_page);
     die($display_page);
   }
 }
