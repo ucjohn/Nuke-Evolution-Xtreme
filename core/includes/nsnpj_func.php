@@ -320,7 +320,7 @@ function pj_convert_text($conv_text){
 
 function pj_copy() {
   global $pj_config;
-  $cpname = ereg_replace("_", " ", $pj_config['location']);
+  $cpname = str_replace("_", " ", $pj_config['location']);
   $pcname = $pj_config['location'];
   echo "<script type=\"text/javascript\">\n";
   echo "<!--\n";
