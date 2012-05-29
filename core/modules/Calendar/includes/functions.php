@@ -119,7 +119,7 @@ function calGetEventDates($event){
         $event['startTimestamp'] = @mktime($event['startHour'], $event['startMin'], 0, $event['startMonth'], $event['startDay'], $event['startYear']);
     } else { // from DB
         $sqldate = $event['startDate'].' '.$event['startTime'];
-        ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})", $sqldate, $x);
+        preg_match("/([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})/", $sqldate, $x);
         $event['startHour']  = $x[4];
         $event['startMin']   = $x[5];
         $event['startMonth'] = $x[2];
@@ -144,7 +144,7 @@ function calGetEventDates($event){
         $event['endTimestamp'] = @mktime($event['endHour'], $event['endMin'], 0, $event['endMonth'], $event['endDay'], $event['endYear']);
     } else { // from DB
         $sqldate = $event['endDate'].' '.$event['endTime'];
-        ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})", $sqldate, $x);
+        preg_match("/([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})/", $sqldate, $x);
         $event['endHour']  = $x[4];
         $event['endMin']   = $x[5];
         $event['endMonth'] = $x[2];
@@ -163,7 +163,7 @@ function calGetEventDates($event){
         $event['posteddate'] = sprintf ("%04d-%02d-%02d %02d:%02d:00", Date("Y"), Date("m"), Date("d"), Date("H"), Date("i"));
         $event['postDateShort'] = strftime(_CALSHORTDATEFORMAT, time());
     } else {
-        ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})", $event['posteddate'], $x);
+        preg_match("/([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})/", $event['posteddate'], $x);
         $event['postDateShort'] = strftime(_CALSHORTDATEFORMAT, @mktime($x[4],$x[5],0,$x[2],$x[3],$x[1]));
     }
 
@@ -394,7 +394,7 @@ function calBuildModusselectors($op, $tag, $monat, $jahr) {
 
 #########################################################################################
 function calGetTimeFormated($time) {
-    if (ereg("([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})", $time, $tmp)) {
+    if (preg_match("/([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})/", $time, $tmp)) {
         $tmptime = @mktime($tmp[1],$tmp[2],0,Date("m"),Date("d"),Date("Y"));
     } else {
         $tmptime = time();
@@ -1019,14 +1019,14 @@ function calDetectGoodBrowser() {
 
 #########################################################################################
 function calValueToText($tmp) {
-    $tmp = ereg_replace(10,"",$tmp);
-    $tmp = ereg_replace(9,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",$tmp);
-    $tmp = ereg_replace("<","&lt;",$tmp);
-    $tmp = ereg_replace(">","&gt;",$tmp);
-    $tmp = ereg_replace("\"","&quot;",$tmp);
-    $tmp = ereg_replace("\'","&quot;",$tmp);
-    $tmp = ereg_replace("\&\#039;","&quot;",$tmp);
-    $tmp = ereg_replace(13," ",$tmp);
+    $tmp = str_replace(10,"",$tmp);
+    $tmp = str_replace(9,"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",$tmp);
+    $tmp = str_replace("<","&lt;",$tmp);
+    $tmp = str_replace(">","&gt;",$tmp);
+    $tmp = str_replace("\"","&quot;",$tmp);
+    $tmp = str_replace("\'","&quot;",$tmp);
+    $tmp = str_replace("\&\#039;","&quot;",$tmp);
+    $tmp = str_replace(13," ",$tmp);
     $tmp = nl2br($tmp);
     return $tmp;
 }
