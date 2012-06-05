@@ -668,6 +668,9 @@ function bbencode_second_pass($text, $uid)
      // [youtube]YouTube URL[/youtube] code..
     $patterns[] = "#\[youtube\]http://[A-Za-z0-9.]{2,5}.youtube.com/watch\?v=([0-9A-Za-z-_]{11})[^[]*\[/youtube\]#is";
     $replacements[] = $bbcode_tpl['youtube'];
+
+    $patterns[] = "#\[youtube\]http://youtu.be/([0-9A-Za-z-_]{11})[^[]*\[/youtube\]#is";
+    $replacements[] = $bbcode_tpl['youtube'];
 /*****[END]********************************************
  [ Mod:     Advanced BBCode Box               v5.0.0a ]
  ******************************************************/
