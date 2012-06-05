@@ -36,10 +36,9 @@ if (!defined('IN_PHPBB'))
     die('Hacking attempt');
 }
 
-define('NUKE_BASE_DIR', dirname(dirname(dirname(dirname(__FILE__)))) . '/');
 define('IN_ADMIN', true);
 define('FORUM_ADMIN', true);
-include(NUKE_BASE_DIR . "mainfile.php");
+dirname(dirname(dirname(dirname(__FILE__)))) .  "/mainfile.php");
 $phpbb_root_path = './../';
 include(NUKE_FORUMS_DIR.'common.php');
 
