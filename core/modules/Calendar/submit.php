@@ -76,11 +76,11 @@ function calSubmitStart($gvs) {
     if (calIsPostAllowed()) {
         $sd = Date("Y-m-d");
         if (isset($gvs['sd'])) {
-            if (ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", $gvs['sd'], $tmp)) {
+            if (preg_match("/([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})/", $gvs['sd'], $tmp)) {
                 $sd = $tmp[1].'-'.$tmp[2].'-'.$tmp[3];
             }
         }
-        ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", $sd, $tmp);
+        preg_match("/([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})/", $sd, $tmp);
         $event['aid']       = calIsAdmin();
         $event['topic']     = 0;
         $event['categorie'] = 0;
@@ -148,11 +148,11 @@ function calSubmitThanks($gvs) {
     global $db, $calconf;
     $sd = Date("Y-m-d");
     if (isset($gvs['sd'])) {
-        if (ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", $gvs['sd'], $tmp)) {
+        if (preg_match("/([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})/", $gvs['sd'], $tmp)) {
             $sd = $tmp[1].'-'.$tmp[2].'-'.$tmp[3];
         }
     }
-    ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", $sd, $date);
+    preg_match("/([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})/", $sd, $date);
     $qry="SELECT COUNT(eid) FROM ".CAL_TABLE_EVENTS." WHERE activ=0";
     $result = $db->sql_query($qry);
     list($waiting) = $db->sql_fetchrow($result);
@@ -198,7 +198,7 @@ function checkpost() {
     if (isset($_POST['informant'])) { $_POST['informant'] = substr(strip_tags($_POST['informant']),0,25); }
     if (isset($_POST['aid'])) { $_POST['aid'] = substr(strip_tags($_POST['aid']),0,25); }
     if (isset($_POST['posteddate'])) {
-        if (!ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})", $_POST['posteddate'])) {
+        if (!preg_match("/([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})/", $_POST['posteddate'])) {
             $_POST['posteddate'] = sprintf ("%04d-%02d-%02d %02d:%02d:00", Date("Y"), Date("m"), Date("d"), Date("H"), Date("i"));
         }
     }
