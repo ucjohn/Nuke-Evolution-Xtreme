@@ -26,6 +26,8 @@ Nuke Evolution Xtreme while advanced can be easily installed using local develop
 
 While Nuke Evolution Xtreme uses the same core as Nuke Evolution Basic there have been a lot of updates to it which improve performance and security, please see the following links for installing a fresh copy or upgrading.
 
+##### NOTE
+
 [Fresh install](http://evolution-xtreme.com/modules.php?name=Screen_Casts&act=view&sc=1)  
 [Upgrade](http://evolution-xtreme.com/modules.php?name=Screen_Casts&act=view&sc=29)
 
