@@ -165,7 +165,7 @@ function online() {
     $ctime = time();
     list($count) = $db->sql_ufetchrow("SELECT COUNT(*) FROM ".$prefix."_session WHERE uname='$uname' OR host_addr='$ip'");
     if ($count >= 1) {
-       $result = $db->sql_query('UPDATE '.$prefix.'_session SET uname="'.$uname.'", time="'.$ctime.'", host_addr="'.$ip.'", guest="'.$guest.'", module="'.$custom_title.'", url="'.$url.'" WHERE uname="'.$uname.'" OR host_addr="'.$ip.'"');
+       $result = $db->sql_query('UPDATE '.$prefix.'_session SET uname="'.$uname.'", time="'.$ctime.'", guest="'.$guest.'", module="'.$custom_title.'", url="'.$url.'" WHERE host_addr="'.$ip.'"');
        $db->sql_freeresult($result);
     } else {
        $db->sql_query('INSERT INTO '.$prefix.'_session (uname, time, starttime, host_addr, guest, module, url) VALUES ("'.$uname.'", "'.$ctime.'", "'.$ctime.'", "'.$ip.'", "'.$guest.'","'.$custom_title.'", "'.$url.'")');
@@ -180,11 +180,11 @@ head();
  ******************************************************/
 if (!defined('ADMIN_FILE')) {
 	include_once(NUKE_INCLUDE_DIR.'counter.php');
-	
+
 	if (defined('HOME_FILE')) {
 		include_once(NUKE_INCLUDE_DIR.'messagebox.php');
 		blocks('Center');
-		
+
 		// If you want either of the following on all pages simply
 		// move the include to before if (defined('HOME_FILE'))
 		//
