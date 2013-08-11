@@ -1779,9 +1779,11 @@ function utf8_normalize_nfc($strings)
     include(NUKE_INCLUDE_DIR . 'utf/utf_normalizer.php');
   }
 
+  $utf_normalizer = new utf_normalizer();
+
   if (!is_array($strings))
   {
-    utf_normalizer::nfc($strings);
+    $utf_normalizer->nfc($strings);
   }
   else if (is_array($strings))
   {
@@ -1791,12 +1793,12 @@ function utf8_normalize_nfc($strings)
       {
         foreach ($string as $_key => $_string)
         {
-          utf_normalizer::nfc($strings[$key][$_key]);
+          $utf_normalizer->nfc($strings[$key][$_key]);
         }
       }
       else
       {
-        utf_normalizer::nfc($strings[$key]);
+        $utf_normalizer->nfc($strings[$key]);
       }
     }
   }

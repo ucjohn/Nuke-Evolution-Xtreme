@@ -41,6 +41,7 @@ require_once(dirname(__FILE__).'/mainfile.php');
 
 function head() {
     global $sitename, $ab_config, $modheader, $cache;
+
     $ThemeSel = get_theme();
     include_once(NUKE_THEMES_DIR.$ThemeSel.'/theme.php');
     echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n";
@@ -139,12 +140,13 @@ function head() {
 }
 
 function online() {
-    global $prefix, $db, $name, $board_config, $userinfo;
-    $ip = identify::get_ip();
+    global $prefix, $db, $name, $board_config, $userinfo, $identify;
+
+    $ip = $identify->get_ip();
     $url = (defined('ADMIN_FILE')) ? 'index.php' : Fix_Quotes($_SERVER['REQUEST_URI']);
     $uname = $ip;
     $guest = 1;
-    $user_agent = identify::identify_agent();
+    $user_agent = $identify->identify_agent();
     if (is_user()) {
         $uname = $userinfo['username'];
         $guest = 0;

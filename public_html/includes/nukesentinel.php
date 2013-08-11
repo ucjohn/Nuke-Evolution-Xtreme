@@ -38,6 +38,8 @@ define('REGEX_UNION','#\w?\s?union\s\w*?\s?(select|all|distinct|insert|update|dr
 // Load required configs
 global $remote, $nsnst_const, $admin_file, $userinfo, $currentlang, $cache, $nukeurl, $name;
 
+$identify = new identify();
+
 /*****[BEGIN]******************************************
  [ Base:     Evolution Functions               v1.5.0 ]
  ******************************************************/
@@ -57,7 +59,7 @@ $nsnst_const['remote_addr'] = get_remote_addr();
 /*****[BEGIN]******************************************
  [ Base:    Advanced Security Extension        v1.0.0 ]
  ******************************************************/
-$nsnst_const['remote_ip'] = identify::get_ip();
+$nsnst_const['remote_ip'] = $identify->get_ip();
 /*****[END]********************************************
  [ Base:    Advanced Security Extension        v1.0.0 ]
  ******************************************************/

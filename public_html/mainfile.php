@@ -142,12 +142,32 @@ define('NUKE_FORUMS_DIR', (defined("IN_ADMIN") ? './../' : 'modules/Forums/'));
 define('NUKE_CACHE_DIR', NUKE_INCLUDE_DIR . 'cache/');
 define('NUKE_CLASSES_DIR', NUKE_INCLUDE_DIR . 'classes/');
 define('NUKE_ZEND_DIR', NUKE_BASE_DIR . 'Zend/');
+define('NUKE_CLASS_EXCEPTION_DIR',  NUKE_CLASSES_DIR . 'exceptions/');
 // define the INCLUDE PATH
 define('INCLUDE_PATH', NUKE_BASE_DIR);
 
 define('GZIPSUPPORT', extension_loaded('zlib'));
 define('GDSUPPORT', extension_loaded('gd'));
 define('CAN_MOD_INI', !stristr(ini_get('disable_functions'), 'ini_set'));
+
+// If a class hasn't been loaded yet find the required file on the server and load
+// it in using the special autoloader detection built into PHP5+
+if (!function_exists('classAutoloader')) {
+  function classAutoloader($class) {
+    // Set the class file path
+    if (preg_match('/Exception/', $class)) {
+      $file = NUKE_CLASS_EXCEPTION_DIR . strtolower($class) . '.php';
+    } else {
+      $file = NUKE_CLASSES_DIR . 'class.' . strtolower($class) . '.php';
+    }
+
+    if (!class_exists($class, false) && file_exists($file)) {
+      require_once($file);
+    }
+  }
+
+  spl_autoload_register('classAutoloader');
+}
 
 //Check for these functions to see if we can use the new captcha
 if(function_exists('imagecreatetruecolor') && function_exists('imageftbbox')) {
@@ -172,13 +192,20 @@ if (!$file_mode) {
     $file_mode = 0644;
 }
 
+// Core exceptions handler
+include_once(NUKE_INCLUDE_DIR . 'exception.php');
+include_once(NUKE_INCLUDE_DIR . 'abstract/abstract.exception.php');
+
 // Include the required files
 @require_once(NUKE_DB_DIR.'db.php');
 //$db->debug = true;
 // Include Error Logger and identify class
 @require_once(NUKE_CLASSES_DIR.'class.identify.php');
 global $agent;
-$agent = identify::identify_agent();
+
+$identify = new identify();
+$agent = $identify->identify_agent();
+
 @require_once(NUKE_INCLUDE_DIR.'log.php');
 
 if (ini_get('output_buffering') && !isset($agent['bot'])) {
@@ -1171,4 +1198,3 @@ include_once(NUKE_CLASSES_DIR.'class.zip.php');
 /*****[END]********************************************
  [ Include:  Zip Class                                ]
  ******************************************************/
-?>
