@@ -11,25 +11,25 @@
 
   Dragonfly is released under the terms and conditions
   of the GNU GPL version 2 or any later version
-  
+
   $Revision: 9.25 $
   $Author: djmaze $
 **********************************************/
 
 /*
     This was orginally derived from DragonFly CMS/CPG Nuke
-    but was modified to work with nuke by other coders that 
+    but was modified to work with nuke by other coders that
     removed the copyright information and distributed it
     on other sites.
 */
 
 class BBCode {
 
-    function encode_html($text) {
+    public static function encode_html($text) {
         return (preg_match('/</', $text)) ? stripslashes(check_html($text, '')) : $text;
     }
 
-    function encode($text)
+    public static function encode($text)
     {
         # Split all bbcodes.
         $text_parts = BBCode::split_bbcodes($text);
@@ -50,7 +50,7 @@ class BBCode {
         return trim($text);
     }
 
-    function decode($text, $allowed=0, $allow_html=false)
+    public static function decode($text, $allowed=0, $allow_html=false)
     {
         global $bb_codes;
         # First: If there isn't a "[" and a "]" in the message, don't bother.
@@ -136,7 +136,7 @@ class BBCode {
             # [img]image_url_here[/img] code..
             $patterns[] = "#\[img\]([\w]+(://|\.|/)[^ (\"\n\r\t<]*?)\[/img\]#si";
             $replacements[] = "<img src=\"\\1\" border=\"0\" alt=\"\" />";
-			
+
 /*****[START]******************************************
  [ Mod:     Lytebox Resize Images              v3.2.2 ]
  ******************************************************/
@@ -177,7 +177,7 @@ class BBCode {
         return trim($text);
     }
 
-    function split_bbcodes($text)
+    public static function split_bbcodes($text)
     {
         $curr_pos = 0;
         $str_len = strlen($text);
@@ -233,7 +233,7 @@ class BBCode {
     }
 
     # split the bbcodes and use nl2br on everything except [php]
-    function split_on_bbcodes($text, $allowed=0, $allow_html=false)
+    public static function split_on_bbcodes($text, $allowed=0, $allow_html=false)
     {
         global $bb_codes;
         # Split all bbcodes.
@@ -275,7 +275,7 @@ class BBCode {
         return $text;
     }
 
-    function decode_code($text)
+    public static function decode_code($text)
     {
         global $bb_codes;
         $text = substr($text, 6, -7);
@@ -293,7 +293,7 @@ class BBCode {
         return $bb_codes['code_start'].nl2br($text).$bb_codes['code_end'];
     }
 
-    function decode_php($text)
+    public static function decode_php($text)
     {
         global $bb_codes;
         $text = substr($text, 5, -6);
@@ -327,7 +327,7 @@ class BBCode {
         return $bb_codes['php_start'].$text.$bb_codes['php_end'];
     }
 
-    function decode_list($text)
+    public static function decode_list($text)
     {
         // &(?![a-z]{2,6};|#[0-9]{1,4};)
         $items = explode('[*]', $text);
@@ -350,5 +350,3 @@ class BBCode {
     }
 
 }
-
-?>

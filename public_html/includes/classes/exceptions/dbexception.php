@@ -38,7 +38,7 @@ class DBException extends aException {
 	 * The currently valid database class types that have been integrated with the Nuke Evolution
 	 * Xtreme Core
 	 */
-	public static $validDBTypes = array('MySQL', 'MySQLi', 'PDO');
+	public static $validDBTypes = array('MySQL', 'MySQLi');
 
 
 	/**
