@@ -62,7 +62,7 @@ function quoteSelection()
     }
 </script>
 <tr>
-<th colspan="3" height="25" style="padding: 0px"><strong>{L_QUICK_REPLY}</strong></th>
+<th colspan="3" height="25" style="padding: 0"><strong>{L_QUICK_REPLY}</strong></th>
 </tr>
 <tr>
 <td align="right" class="row1" valign="top"><span class="gen"><strong>{L_SUBJECT}:</strong></span></td>
@@ -70,7 +70,7 @@ function quoteSelection()
 <form action="{ROPM_QUICK_REPLY.POST_ACTION}" method="post" name="post" onsubmit="return checkForm(this)">
 <input type="text" name="subject" size="45" maxlength="60" style="width:450px" tabindex="2" class="post" value="{ROPM_QUICK_REPLY.SUBJECT}" /><br /></td></tr>
 <tr><td align="right" class="row1" valign="top"><span class="gen"><strong>{L_MESSAGE}:</strong></span></td>
-<td class="row1" colspan="2" valign="top" style="padding-top: 0px; padding-bottom: 0px">
+<td class="row1" colspan="2" valign="top" style="padding-top: 0; padding-bottom: 0">
 <textarea name="message" style="width:450px; height: 140px;" wrap="virtual" tabindex="3" class="post" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);"></textarea><br />
 <!-- BEGIN SMILIES -->
 <img src="{ROPM_QUICK_REPLY.SMILIES.URL}" border="0" onmouseover="this.style.cursor='hand';" onclick="emoticon('{ROPM_QUICK_REPLY.SMILIES.CODE}');" alt="{ROPM_QUICK_REPLY.SMILIES.DESC}" title="{ROPM_QUICK_REPLY.SMILIES.DESC}" />

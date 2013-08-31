@@ -218,7 +218,7 @@
           </tr>
           <tr> 
             <td colspan="9">
-                <span class="gen"><textarea name="message" rows="15" cols="35" wrap="virtual" style="width:100%; border: 0px;" tabindex="3" class="post" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);">{MESSAGE}</textarea></span>
+                <span class="gen"><textarea name="message" rows="15" cols="35" wrap="virtual" style="width:100%; border: 0;" tabindex="3" class="post" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);">{MESSAGE}</textarea></span>
             </td>
           </tr>
         </table>

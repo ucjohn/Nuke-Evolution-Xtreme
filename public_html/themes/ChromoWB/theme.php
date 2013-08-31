@@ -506,4 +506,3 @@ echo "</td>\n";
 echo "  </tr>\n";
 echo "</table><br>\n";
 }
-?>
