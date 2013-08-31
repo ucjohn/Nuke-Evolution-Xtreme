@@ -20,8 +20,8 @@
 <!-- END modules -->
 
 <br />
-<center><span class="copyright">Statistics Mod Version 3 Demonstration (BETA3-2003-03-16)
+<div align="center"><span class="copyright">Statistics Mod Version 3 Demonstration (BETA3-2003-03-16)
 <!-- BEGIN switch_debug -->
 <br /><br /><br />Statistics Mod - [time: {TIME} | sql time: {SQL_TIME} | queries: {QUERY} | <a href="{U_EXPLAIN}" target="_blank">Explain</a>]
 <!-- END switch_debug -->
-</span></center>
+</span></div>

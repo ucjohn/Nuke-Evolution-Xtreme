@@ -5,7 +5,7 @@
 
 <!-- BEGIN resume_to_simple_deletion -->
 	<tr>
-	  <td align="center" class="row2" valign="middle" height="28" colspan="2"><span class="genmed"><b>{resume_to_simple_deletion.RESUME_TO_SIMPLE_DELETION}</b></span></td>
+	  <td align="center" class="row2" valign="middle" height="28" colspan="2"><span class="genmed"><strong>{resume_to_simple_deletion.RESUME_TO_SIMPLE_DELETION}</strong></span></td>
 	</tr>  
 <!-- END resume_to_simple_deletion -->
 
@@ -17,7 +17,7 @@
 <!-- BEGIN deleted_user_topics -->
 	<tr>
 	  <td align="center" class="row2" valign="middle" height="28"><span class="genmed">{deleted_user_topics.L_TOPIC_TITLES}:</span></td>
-	  <td align="center" class="row2" valign="middle" height="28"><span class="genmed"><b>{deleted_user_topics.TOPIC_TITLES}</b></span></td>
+	  <td align="center" class="row2" valign="middle" height="28"><span class="genmed"><strong>{deleted_user_topics.TOPIC_TITLES}</strong></span></td>
 	</tr> 
 <!-- END deleted_user_topics -->
 
@@ -25,7 +25,7 @@
 <!-- BEGIN num_of_deleted_user_topics -->
    <tr>
 	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed">{num_of_deleted_user_topics.L_NUM_OF_DELETED_TOPICS}:</span></td>
-	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"> <b>{num_of_deleted_user_topics.NUM_OF_DELETED_TOPICS}</b></span></td>
+	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"> <strong>{num_of_deleted_user_topics.NUM_OF_DELETED_TOPICS}</strong></span></td>
 	</tr>
 <!-- END num_of_deleted_user_topics -->
 
@@ -41,7 +41,7 @@
 <!-- BEGIN num_deleted_posts_in_usertopics -->
    <tr>
 	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed">{num_deleted_posts_in_usertopics.L_NUM_DELETED_POSTS_IN_U_TOPICS}:</span></td>
-	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><b>{num_deleted_posts_in_usertopics.NUM_DELETED_POSTS_IN_U_TOPICS}</b></span></td>
+	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><strong>{num_deleted_posts_in_usertopics.NUM_DELETED_POSTS_IN_U_TOPICS}</strong></span></td>
 	</tr>
 <!-- END num_deleted_posts_in_usertopics -->
 
@@ -49,11 +49,11 @@
 <!-- BEGIN forums_with_new_last_posts1 -->
    <tr>
 	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed">{forums_with_new_last_posts1.L_FORUMS_WHERE_SET_NEW_LASTPOST}:</span></td>
-	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><b>{forums_with_new_last_posts1.LIST_FORUMS_WHERE_SET_NEW_LASTPOST}</b></span></td>
+	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><strong>{forums_with_new_last_posts1.LIST_FORUMS_WHERE_SET_NEW_LASTPOST}</strong></span></td>
 	</tr>
 	   <tr>
 	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed">{forums_with_new_last_posts1.L_NUM_FORUMS_WHERE_SET_NEW_LASTPOST}: </span></td>
-	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><b>{forums_with_new_last_posts1.NUM_FORUMS_WHERE_SET_NEW_LASTPOST}</b></span></td>
+	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><strong>{forums_with_new_last_posts1.NUM_FORUMS_WHERE_SET_NEW_LASTPOST}</strong></span></td>
 	</tr>
 <!-- END forums_with_new_last_posts1 -->
 
@@ -61,11 +61,11 @@
 <!-- BEGIN recynced_users_in_usertopics -->
    <tr>
 	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed">{recynced_users_in_usertopics.L_RECYNCED_USERS_IN_U_TOPICS}:</span></td>
-	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><b>{recynced_users_in_usertopics.LIST_RECYNCED_USERS_IN_U_TOPICS}</b></span></td>
+	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><strong>{recynced_users_in_usertopics.LIST_RECYNCED_USERS_IN_U_TOPICS}</strong></span></td>
 	</tr>
 	<tr>
 	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed">{recynced_users_in_usertopics.L_TOTAL_USERS_IN_U_TOPICS}:</span></td>
-	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><b>{recynced_users_in_usertopics.TOTAL_USERS_IN_U_TOPICS}</b></span></td>
+	  <td align="center"  class="row2" valign="middle" height="28"><span class="genmed"><strong>{recynced_users_in_usertopics.TOTAL_USERS_IN_U_TOPICS}</strong></span></td>
 	</tr>
 <!-- END recynced_users_in_usertopics -->
 
@@ -78,12 +78,12 @@
 
 	<tr>
 	  <td align="center" class="row2" valign="middle" height="28"><span class="genmed">{topics_where_only_this_user_posts.L_DELETED_TOPICS2}:</span></td>
-	  <td align="center" class="row2" valign="middle" height="28"><span class="genmed"><b>{topics_where_only_this_user_posts.LIST_DELETED_TOPICS2}</b><br></span></td>
+	  <td align="center" class="row2" valign="middle" height="28"><span class="genmed"><strong>{topics_where_only_this_user_posts.LIST_DELETED_TOPICS2}</strong><br></span></td>
 	</tr>
 
  	<tr>
 	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed">{topics_where_only_this_user_posts.L_TOTAL}: </span></td>
-	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><b>{topics_where_only_this_user_posts.TOTAL_DELETED_TOPICS2}</b></span></td>
+	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><strong>{topics_where_only_this_user_posts.TOTAL_DELETED_TOPICS2}</strong></span></td>
 	</tr>
 	
  	<tr>
@@ -93,7 +93,7 @@
 	
 	 <tr>
 	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed">{topics_where_only_this_user_posts.L_TOTAL}:</span></td>
-	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><b>{topics_where_only_this_user_posts.TOTAL_DELETED_POSTS_IN_U_TOPICS2}</b></span></td>
+	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><strong>{topics_where_only_this_user_posts.TOTAL_DELETED_POSTS_IN_U_TOPICS2}</strong></span></td>
 	</tr>
 <!-- END topics_where_only_this_user_posts -->
 
@@ -102,11 +102,11 @@
 <!-- BEGIN forums_with_new_last_posts2 -->
 	<tr>
 	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed">{forums_with_new_last_posts2.L_FORUMS_WHERE_SET_NEW_LASTPOST2}:</span></td>
-	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><b>{forums_with_new_last_posts2.LIST_FORUMS_WHERE_SET_NEW_LASTPOST2}</b></span></td>
+	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><strong>{forums_with_new_last_posts2.LIST_FORUMS_WHERE_SET_NEW_LASTPOST2}</strong></span></td>
 	</tr>
 	<tr>
 	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed">{forums_with_new_last_posts2.L_NUM_FORUMS_WHERE_SET_NEW_LASTPOST2}:</span></td>
-	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><b>{forums_with_new_last_posts2.NUM_FORUMS_WHERE_SET_NEW_LASTPOST2}</b></span></td>
+	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><strong>{forums_with_new_last_posts2.NUM_FORUMS_WHERE_SET_NEW_LASTPOST2}</strong></span></td>
 	</tr>
 <!-- END forums_with_new_last_posts2 -->
 
@@ -122,7 +122,7 @@
 	</tr>
 
 <br>
-{all_other_user_posts_in_other_topics.L_TOTAL}: <b>{all_other_user_posts_in_other_topics.NUM_OF_OTHER_POSTS}</b></p>
+{all_other_user_posts_in_other_topics.L_TOTAL}: <strong>{all_other_user_posts_in_other_topics.NUM_OF_OTHER_POSTS}</strong></p>
 <!-- END all_other_user_posts_in_other_topics -->
 
 
@@ -133,7 +133,7 @@
 	</tr>
 	<tr>
 	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed">{topics_to_recync_first_or_lastpost.TOTAL}:</span></td>
-	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><b>{topics_to_recync_first_or_lastpost.NUM_TOPICS_TO_RECYNK_FIRST_LAST_POSTS}</b></span></td>
+	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><strong>{topics_to_recync_first_or_lastpost.NUM_TOPICS_TO_RECYNK_FIRST_LAST_POSTS}</strong></span></td>
 	</tr>
 <!-- END topics_to_recync_first_or_lastpost -->
 
@@ -141,11 +141,11 @@
 <!-- BEGIN forums_with_new_last_posts3 -->
 	 <tr>
 	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed">{forums_with_new_last_posts3.L_FORUMS_WHERE_SET_NEW_LASTPOST3}:</span></td>
-	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><b>{forums_with_new_last_posts3.LIST_FORUMS_WHERE_SET_NEW_LASTPOST3}</b></span></td>
+	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><strong>{forums_with_new_last_posts3.LIST_FORUMS_WHERE_SET_NEW_LASTPOST3}</strong></span></td>
 	</tr>
 	<tr>
 	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed">{forums_with_new_last_posts3.L_NUM_FORUMS_WHERE_SET_NEW_LASTPOST3}:</span></td>
-	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><b>{forums_with_new_last_posts3.NUM_FORUMS_WHERE_SET_NEW_LASTPOST3}</b></span></td>
+	  	<td align="center" class="row2" valign="middle" height="28"><span class="genmed"><strong>{forums_with_new_last_posts3.NUM_FORUMS_WHERE_SET_NEW_LASTPOST3}</strong></span></td>
 	</tr>
 <!-- END forums_with_new_last_posts3 -->
 

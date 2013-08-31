@@ -60,7 +60,7 @@ function resize_avatar(image)
                     <tbody>
                                     <!-- BEGIN bestscore2 -->
                             <tr>
-                              <td class="{arcaderow2.bestscore2.CLASS}"  align=left width="85%" valign="top"><p>&nbsp;<span class=smallfont>• </span><span class="gensmall">{arcaderow2.bestscore2.L_HEADING_CHAMP}</span></p></td>
+                              <td class="{arcaderow2.bestscore2.CLASS}"  align=left width="85%" valign="top"><p>&nbsp;<span class=smallfont> </span><span class="gensmall">{arcaderow2.bestscore2.L_HEADING_CHAMP}</span></p></td>
                               <td class="{arcaderow2.bestscore2.CLASS}"  noWrap align=right width="15%" valign="top"><p><span class="gensmall">{arcaderow2.bestscore2.LAST_SCOREDATE}</span><font size=1> </font></p></td>
                                      </tr>
                                  <!-- END bestscore2 --> 
@@ -103,7 +103,7 @@ function resize_avatar(image)
                     <tbody>
                              <!-- BEGIN score3 -->
                     <tr>
-                      <td class=alt1 vAlign=top align=left width="85%"><p><span class="gensmall"><span class=smallfont>• </span><span class="gensmall">{arcaderow3.score3.L_LAST_SCORE}</span></p></td>
+                      <td class=alt1 vAlign=top align=left width="85%"><p><span class="gensmall"><span class=smallfont>ï¿½ </span><span class="gensmall">{arcaderow3.score3.L_LAST_SCORE}</span></p></td>
                     </tr>
                            <!-- END score3 --> 
                            </tbody>

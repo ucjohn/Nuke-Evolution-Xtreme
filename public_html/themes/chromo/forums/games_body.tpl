@@ -58,7 +58,7 @@ function resize_avatar(image)
                
                <table width="100%" class="bodyline" cellpadding="2" cellspacing="1" >
                <tr> 
-                  <td class="row1" align="center" colspan="3"><span class="genmed"><strong>Hi-Score<br /><big>{HIGHSCORE}</big></strong></span></td> 
+                  <td class="row1" align="center" colspan="3"><span class="genmed"><strong>Hi-Score<br /><em>{HIGHSCORE}</em></strong></span></td>
                </tr>
                </table>
             </td>

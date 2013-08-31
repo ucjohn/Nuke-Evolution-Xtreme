@@ -55,16 +55,16 @@
         </tr>        
         <tr> 
           <td valign="top" align="right" nowrap="nowrap"><span class="gen">{L_BIRTHDAY}:</span></td>
-          <td> <b><span class="gen">{BIRTHDAY}</span></b></td>
+          <td> <strong><span class="gen">{BIRTHDAY}</span></strong></td>
         </tr>
 <!-- Start add - Gender MOD --> 
         <tr> 
 	      <td valign="top" align="right" nowrap="nowrap"><span class="gen">{L_GENDER}:</span></td>
-	      <td> <b><span class="gen">{GENDER}</span></b></td>
+	      <td> <strong><span class="gen">{GENDER}</span></strong></td>
         </tr>
 <!-- BEGIN switch_admin_notes -->
 		<tr>
-		  <td valign="top" align="right" nowrap="nowrap"><span class="gen"><b>{L_ADMIN_NOTES}:</b></span></td>
+		  <td valign="top" align="right" nowrap="nowrap"><span class="gen"><strong>{L_ADMIN_NOTES}:</strong></span></td>
 		  <td> <span class="gen">{ADMIN_NOTES}</span></td>
 		</tr>
 <!-- END switch_admin_notes -->         

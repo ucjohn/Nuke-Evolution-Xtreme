@@ -1,10 +1,7 @@
 /* Fancy form styles for IE */
 
 input, textarea, select {
-border-top-width : 1px;
-border-right-width : 1px;
-border-bottom-width : 1px;
-border-left-width : 1px;
+	border-width: 1px;
 }
 
 /* Start replacement - Advanced time management MOD */
@@ -12,10 +9,7 @@ border-left-width : 1px;
 /* End replacement - Advanced time management MOD */
 
 input.button {
-border-top-width : 1px; 
-border-right-width : 1px;
-border-bottom-width : 1px;
-border-left-width : 1px;
+	border-width: 1px;
 }
 
 .postbody { line-height: 18px }

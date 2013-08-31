@@ -2,7 +2,7 @@
 </span>
 <table border="0" align="center" width="90%" cellpadding="3" cellspacing="1">
 <tr>
-          <td><span class="genmed"><b>Protected Message: - Thank you for replying...</b></span></td>
+          <td><span class="genmed"><strong>Protected Message: - Thank you for replying...</strong></span></td>
         </tr>
         <tr>
           <td class="quote">
@@ -17,11 +17,11 @@
 </span>
 <table border="0" align="center" width="90%" cellpadding="3" cellspacing="1">
 <tr>
-          <td><span class="genmed"><b>Protected Message:</b></span></td>
+          <td><span class="genmed"><strong>Protected Message:</strong></span></td>
         </tr>
         <tr>
           <td class="quote">
-                <center>--- If you are a *registered user* : you need to post in this topic to see the message ---</center>
+                <div align="center">--- If you are a *registered user* : you need to post in this topic to see the message ---</div>
                 </td>
         </tr>
 </table>

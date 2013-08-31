@@ -1,4 +1,4 @@
-<strong><center>{L_UACP} :: {USERNAME}</center></strong>
+<strong><div align="center">{L_UACP} :: {USERNAME}</div></strong>
 
 <script language="Javascript" type="text/javascript">
     //

@@ -31,7 +31,7 @@
     <tr>
         <td class="{postrow.ROW_CLASS}" width="40" align="center"><input type="checkbox" name="p[]" value="{postrow.REPORT_ID}" />&nbsp;<span class="genmed"><a href="{postrow.U_CLOSE_REPORT}">{postrow.L_CLOSE_REPORT}</a></span></td>
         <td class="{postrow.ROW_CLASS}" width="200"><a href="{postrow.U_VIEW_POST}" class="topictitle">{postrow.TOPIC_TITLE}</a><br /><span class="genmed">{postrow.FORUM}</span></td>
-        <td class="{postrow.ROW_CLASS}" width="350"><span class="gen">{postrow.REPORTER} <i>({postrow.DATE})</i><br /><hr />{postrow.COMMENTS}</span></td>
+        <td class="{postrow.ROW_CLASS}" width="350"><span class="gen">{postrow.REPORTER} <em>({postrow.DATE})</em><br /><hr />{postrow.COMMENTS}</span></td>
         <td class="{postrow.ROW_CLASS}" width="130" align="center"><span class="genmed">{postrow.LAST_ACTION}</span></td>
         <td class="{postrow.ROW_CLASS}" width="300" align="center"><span class="gen">{postrow.LAST_ACTION_COMMENTS}</span></td>
     </tr>

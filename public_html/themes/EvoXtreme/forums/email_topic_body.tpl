@@ -6,22 +6,22 @@
   </table>
   <table border="0" cellpadding="3" cellspacing="1" width="100%" class="forumline">
   <tr>
-    <th class="thHead" colspan="2" height="25"><b>{L_TITLE}</b></th>
+    <th class="thHead" colspan="2" height="25"><strong>{L_TITLE}</strong></th>
   </tr>
   <tr>
-    <td width="30%" class="row1"><span class="gen"><b>{L_SUBJECT}</b></span></td>
+    <td width="30%" class="row1"><span class="gen"><strong>{L_SUBJECT}</strong></span></td>
     <td class="row2"><span class="gen">{TOPIC_TITLE}</span></td>
   </tr>
   <tr>
-    <td width="30%" class="row1"><span class="gen"><b>{L_FRIEND_NAME}</b></span></td>
+    <td width="30%" class="row1"><span class="gen"><strong>{L_FRIEND_NAME}</strong></span></td>
     <td class="row2"><span class="gen"><input type="text" name="friend_name" size="30" maxlength="100" tabindex="1" class="post" /></span></td>
   </tr>
   <tr>
-    <td width="30%" class="row1"><span class="gen"><b>{L_FRIEND_EMAIL}</b></span></td>
+    <td width="30%" class="row1"><span class="gen"><strong>{L_FRIEND_EMAIL}</strong></span></td>
     <td class="row2"><span class="gen"><input type="text" name="friend_email" size="30" maxlength="100" tabindex="2" class="post" /></span></td>
   </tr>
   <tr>
-    <td width="30%" valign="top" class="row1"><span class="gen"><b>{L_MESSAGE}</b></span><span class="gensmall"><br />{L_MESSAGE_EXPLAIN}</span></td>
+    <td width="30%" valign="top" class="row1"><span class="gen"><strong>{L_MESSAGE}</strong></span><span class="gensmall"><br />{L_MESSAGE_EXPLAIN}</span></td>
     <td class="row2"><span class="gen"><textarea name="message" cols="30" rows="7" tabindex="3" class="post"></textarea></span></td>
   </tr>
   <tr>

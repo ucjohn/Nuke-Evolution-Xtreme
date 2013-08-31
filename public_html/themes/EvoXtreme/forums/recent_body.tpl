@@ -39,7 +39,7 @@
   <!-- END recent -->
   <!-- BEGIN switch_no_topics -->
   <tr>
-        <td colspan="5" class="row1" align="center" height="28"><span class="gen"><i>{L_NO_TOPICS}</i></span></td>
+        <td colspan="5" class="row1" align="center" height="28"><span class="gen"><em>{L_NO_TOPICS}</em></span></td>
   </tr>
   <!-- END switch_no_topics -->
   <tr>
