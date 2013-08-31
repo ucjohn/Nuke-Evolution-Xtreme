@@ -56,7 +56,7 @@ if (realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
     exit('Access Denied');
 }
 // Define File
-define_once('NUKE_EVO', '2.0.9d');
+define_once('NUKE_EVO', '2.0.9e');
 define_once('EVO_EDITION', 'xtreme');
 define('PHPVERS', @phpversion());
 define_once('EVO_VERSION', NUKE_EVO . ' ' . EVO_EDITION);
