@@ -51,5 +51,3 @@ while (list($sid, $title, $comments, $counter) = $db->sql_fetchrow($result)) {
 $db->sql_freeresult($result);
 $content .= "</table>";
 $content .= "<br /><center>[ <a href=\"modules.php?name=News\">"._MORENEWS."</a> ]</center>";
-
-?>

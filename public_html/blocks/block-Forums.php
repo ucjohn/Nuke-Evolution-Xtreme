@@ -262,5 +262,3 @@ foreach($AnnounceData as $announce_info)
 }
 
 $content .= make_table($posts, $announcements, $SplitAnnouncements);
-
-?>

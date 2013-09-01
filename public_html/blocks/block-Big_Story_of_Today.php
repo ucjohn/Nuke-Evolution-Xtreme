@@ -64,5 +64,3 @@ if ((!$fsid) AND (!$ftitle)) {
     $r_options .= "&amp;thold=".$thold;
     $content .= "<a href=\"modules.php?name=News&amp;file=article&amp;sid=$fsid$r_options\">$ftitle</a></span>";
 }
-
-?>

@@ -47,5 +47,3 @@ if (!isset($_GET['Action']) && $_GET['Action'] != 'AJAX') {
     $content .= "<div align=\"center\" id=\"shoutbox\"><script type=\"text/javascript\">document.write(SBtxt);</script></div>\n";
     $content .= $bottom_content."\n";
 }
-
-?>

@@ -26,7 +26,7 @@ if(!defined('NUKE_EVO')) exit;
 global $useflags, $currentlang, $admin_file, $multilingual;
 
 if (!$multilingual) {
-    return $content = '<br /><center>Multilingual is not enabled</center><br />';
+    return $content = '<br /><div align=\center\">Multilingual is not enabled</div><br />';
 }
 
 $qs = defined('ADMIN_FILE') ? $admin_file.'.php?' : '&amp;';
@@ -76,5 +76,3 @@ if ($useflags) {
     $content .= '</select></form>';
 }
 $content .= '</div>';
-
-?>

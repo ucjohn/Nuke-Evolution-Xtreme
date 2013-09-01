@@ -50,7 +50,7 @@
     </tr>
     <tr> 
       <td width="78%" height="28" valign="bottom" colspan="3" class="row1"> 
-        <table style="height: 18px; border:0px; padding: 0px; border-spacing: 0px;">
+        <table style="height: 18px; border:0; padding: 0; border-spacing: 0;">
           <tr> 
             <td valign="middle" nowrap="nowrap">{PROFILE_IMG} {PM_IMG} {EMAIL_IMG} 
               {WWW_IMG} {AIM_IMG} {YIM_IMG} {MSN_IMG}</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><script language="JavaScript" type="text/javascript"><!-- 

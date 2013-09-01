@@ -209,5 +209,3 @@ $content=str_replace("\t","",$content);
 // If you like to use the settings of the admin menu instead
 // simply delete the following line or comment it out.
 $blockfiletitle = ($showTitle) ? ""._CALLISTDESCRIPTION1." $icount "._CALLISTDESCRIPTION2."." : "";
-
-?>

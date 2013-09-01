@@ -109,5 +109,3 @@ if ($usemarquee)
 {
   $content .= "</marquee><br>";
 }
-
-?>

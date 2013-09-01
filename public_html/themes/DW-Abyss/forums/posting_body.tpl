@@ -163,11 +163,11 @@
                                         </select>
                                         <select name="addbbcode20"  style="height: 20px;" onchange="bbfontstyle('[size=' + this.form.addbbcode20.options[this.form.addbbcode20.selectedIndex].value + ']', '[/size]');this.selectedIndex=0;" onMouseOver="helpline('fs')">
                                             <option style="font-weight : bold;" selected="selected">Font Size</option>
-                                            <option style="font-size: 8;" value="8" class="genmed">{L_FONT_TINY}</option>
-                                            <option style="font-size: 10;" value="10" class="genmed">{L_FONT_SMALL}</option>
-                                            <option style="font-size: 12;" value="12" class="genmed">{L_FONT_NORMAL}</option>
-                                            <option style="font-size: 18;" value="18" class="genmed">{L_FONT_LARGE}</option>
-                                            <option style="font-size: 24;" value="24" class="genmed">{L_FONT_HUGE}</option>
+                                            <option style="font-size: 8px;" value="8" class="genmed">{L_FONT_TINY}</option>
+                                            <option style="font-size: 10px;" value="10" class="genmed">{L_FONT_SMALL}</option>
+                                            <option style="font-size: 12px;" value="12" class="genmed">{L_FONT_NORMAL}</option>
+                                            <option style="font-size: 18px;" value="18" class="genmed">{L_FONT_LARGE}</option>
+                                            <option style="font-size: 24px;" value="24" class="genmed">{L_FONT_HUGE}</option>
                                         </select>
                                         <select name="addbbcode18"  style="height: 20px;" onchange="bbfontstyle('[color=' + this.form.addbbcode18.options[this.form.addbbcode18.selectedIndex].value + ']', '[/color]');this.selectedIndex=0;" onMouseOver="helpline('fc')">
                                             <option style="font-weight : bold;" selected>Font Color</option>
@@ -227,7 +227,7 @@
           </tr>
           <tr> 
             <td colspan="9">
-                <span class="gen"><textarea name="message" rows="15" cols="35" wrap="virtual" style="width:100%; border: 0px;" tabindex="3" class="post" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);">{MESSAGE}</textarea></span>
+                <span class="gen"><textarea name="message" rows="15" cols="35" wrap="virtual" style="width:100%; border: 0;" tabindex="3" class="post" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);">{MESSAGE}</textarea></span>
             </td>
           </tr>
         </table>

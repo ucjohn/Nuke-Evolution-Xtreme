@@ -298,4 +298,3 @@ while($nxp_toppost_user_info = $db->sql_fetchrow($R02))
 	$content .= "		</form>\n";
 	$content .= "	</tr>\n";
 	$content .= "</table>";
-?>

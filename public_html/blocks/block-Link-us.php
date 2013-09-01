@@ -50,7 +50,7 @@ elseif($config['marquee_direction'] == 3){ $direction = "left"; }
 elseif($config['marquee_direction'] == 4){ $direction = "right"; }
 
 	if ($config['button_seperate'] == 1){ $seperation ="<span style='width=100px; size=5;'><hr /></span>"; }
-elseif ($config['button_seperate'] == 2){ $seperation ="<center>-------------------</center>"; }
+elseif ($config['button_seperate'] == 2){ $seperation ="<div align=\center\">-------------------</div>"; }
 elseif ($config['button_seperate'] == 0){ $seperation =""; }
 
 	if($config['show_clicks'] == 1){ $clicks = "<br />(Visits ".$site_hits." )"; }
@@ -74,15 +74,15 @@ $linkus_settings = '<a href="'.$nukeurl.'" target="_blank"><img src="'.$config['
  [Block: Settings                        ]
 ******************************************/
 
-$content .= '<center>'.$my_image.'</center><br />';
-$content .= '<center>';
+$content .= '<div align=\center\">'.$my_image.'</div><br />';
+$content .= '<div align=\center\">';
 $content .= '<span class="content"><textarea name="text" rows="3" cols="15">'.$linkus_settings.'</textarea></span>';
 $content .= '<br /><br />';
 $content .= '<a href="modules.php?name=Link_Us">View All Buttons</a><br />';
 
 if($config['user_submit'] == 1){ $content .= '<a href="modules.php?name=Link_Us&op=submitbutton">Submit Button</a><br />'; }
 
-$content .= '</center>';
+$content .= '</div>';
 $content .= '<hr noshade>';
 
 
@@ -105,6 +105,4 @@ if($config['marquee'] == 1){
 $content .= "</marquee>";
 }
 
-$content .= "<br /><div align='right'>&nbsp;<a href='http://www.darkforgegfx.com' alt='DarkForge GFX' title='DarkForge GFX' target='_blank'>&copy;</a></div>";
-
-?>
+$content .= "<br /><div align='right'>&nbsp;<a href='http://www.dfgdesign.com' alt='DFG Design' title='DFG Design' target='_blank'>&copy;</a></div>";

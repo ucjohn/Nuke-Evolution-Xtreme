@@ -69,5 +69,3 @@ if ($s_group_list != '') {
 if (!is_user()) {
     $content .= '<br />'.$lang['Login_to_join'];
 }
-
-?>

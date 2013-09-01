@@ -67,5 +67,3 @@ if (is_admin()) {
                ."</div>\n";
 }
 $db->sql_freeresult($result);
-
-?>

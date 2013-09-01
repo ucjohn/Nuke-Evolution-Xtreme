@@ -34,4 +34,3 @@ echo "<table width='100%' border='0' cellpadding='0' cellspacing='0'>
 			<img src='themes/DW-Abyss/images/FT/footer_76.jpg' width='380' height='51' alt=''></td>
 	</tr>
 </table>";
-?>

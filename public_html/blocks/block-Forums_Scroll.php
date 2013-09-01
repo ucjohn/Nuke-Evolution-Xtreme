@@ -90,9 +90,9 @@ $content = "<table class=\"row1\" cellspacing=\"0\" cellpadding=\"3\" width=\"10
 $content .= "<table class=\"row1\" cellspacing=\"0\" cellpadding=\"3\" width=\"100%\">
  <tr>
   <td class=\"row1\" width=\"100%\">";
-$content  .= "<A name= \"scrollingCode\"></A><MARQUEE behavior=\"scroll\" direction=\"up\" height=\"220\" scrollamount=\"2\" scrolldelay=\"20\" onmouseover='this.stop()' onmouseout='this.start()'>";
-$content .="<center><font class=\"content\"><b>Last 20 Forum Messages</b></center>";
-$content .= "<br>";
+$content  .= "<A name= \"scrollingCode\"></A><marquee behavior=\"scroll\" direction=\"up\" height=\"220\" scrollamount=\"2\" scrolldelay=\"20\" onmouseover='this.stop()' onmouseout='this.start()'>";
+$content .="<div align=\center\"><font class=\"content\"><strong>Last 20 Forum Messages</strong></div>";
+$content .= "<br />";
 $sql = "SELECT 
 t.topic_id, t.topic_last_post_id, t.topic_title, f.forum_name,
 f.forum_id, u.username, u.user_id, p.poster_id, p.post_time FROM
@@ -125,4 +125,3 @@ $content .= "<table class=\"row1\" cellspacing=\"0\" cellpadding=\"3\" width=\"1
  </tr>
  <tr> <td align=\"center\" class=\"row1\" width=\"50%\"><a href=\"modules.php?name=Your_Account&op=edituser\">"._BBFORUM_PROFILE."</a></td>
   <td align=\"center\" class=\"row1\" width=\"50%\"><a href=\"modules.php?name=Private_Messages\">"._BBFORUM_INBOX."</a></td></tr></table>";
-?>

@@ -14,14 +14,14 @@
 /* HTML Newsletter 1.0 module for PHP-Nuke 6.5 - 7.6                    */
 /* By: NukeWorks (webmaster@nukeworks.biz)                              */
 /* http://www.nukeworks.com                                             */
-/* Copyright © 2004 by NukeWorks                                        */
+/* Copyright ï¿½ 2004 by NukeWorks                                        */
 /* License: GNU/GPL                                                     */
 /************************************************************************/
 /************************************************************************
 * HTML Newsletter 1.1 - 1.2 module for PHP-Nuke 6.5 - 7.6
 * By: NukeWorks (mangaman@nukeworks.biz & montego@montegoscripts.com)
 * http://www.nukeworks.biz
-* Copyright © 2004, 2005 by NukeWorks
+* Copyright ï¿½ 2004, 2005 by NukeWorks
 * License: GNU/GPL
 ************************************************************************/
 /************************************************************************
@@ -29,7 +29,7 @@
 * Version:		1.3.0
 * Author:			Rob Herder (aka: montego) of montegoscripts.com
 * Contact:		montego@montegoscripts.com
-* Copyright:	Copyright © 2006 by Montego Scripts
+* Copyright:	Copyright ï¿½ 2006 by Montego Scripts
 * License:		GNU/GPL (see provided LICENSE.txt file)
 ************************************************************************/
 
@@ -195,5 +195,3 @@ if ( $msnl_gasModCfg['scroll'] == 1 ) {
 }
 
 $content .= "</p>";
-
-?>

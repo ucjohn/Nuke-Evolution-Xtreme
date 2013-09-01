@@ -55,4 +55,3 @@ $default = array(
                   );
 global $ThemeInfo;
 $ThemeInfo = LoadThemeInfo($current_theme);
-?>

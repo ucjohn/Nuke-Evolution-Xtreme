@@ -247,5 +247,3 @@ $content .= (!empty($block_block_configs['message'])) ? $block_block_configs['me
 //Button
 $content .= donation_block_make_image_button();
 $content .= "</div>";
-
-?>

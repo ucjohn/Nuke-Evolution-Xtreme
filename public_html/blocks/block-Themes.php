@@ -19,22 +19,20 @@
 if(!defined('NUKE_EVO')) exit;
 
 if (is_user()) {
-    $content  = "<center>\n"; 
+    $content  = "<div align=\"center\">\n";
     $content .= "<form method=\"post\" action=\"" . $_SERVER['PHP_SELF'] . "\">\n";
     $content .= "<input type=\"hidden\" name=\"chngtheme\" value=\"1\" />\n";
     $content .= "<br />\n"; 
     $content .= GetThemeSelect('theme', 'user_themes', false, 'onChange=submit();');
     $content .= "<br />\n"; 
     $content .= "</form>\n"; 
-    $content .= "</center>\n";
+    $content .= "</div>\n";
 } else {
-    $content  = "<center>\n"; 
+    $content  = "<div align=\center\">\n";
     $content .= "<form method=\"post\" action=\"" . $_SERVER['PHP_SELF'] . "\">\n";
     $content .= "<br />\n"; 
     $content .= GetThemeSelect('tpreview', 'user_themes', false, 'onChange=submit();', get_theme(), 0);
     $content .= "<br />\n"; 
     $content .= "</form>\n"; 
-    $content .= "</center>\n";
+    $content .= "</div>\n";
 }
-
-?>

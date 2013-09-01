@@ -103,5 +103,3 @@ if (is_user()) {
     $content .= "</tr>\n";
     $content .= "</table>\n";
 }
-
-?>

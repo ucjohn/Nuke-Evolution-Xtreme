@@ -47,5 +47,3 @@ if (is_admin()) {
 } else {
       $content .="<center><strong>"._ADMIN_BLOCK_DENIED."</strong></center>";
 }
-
-?>

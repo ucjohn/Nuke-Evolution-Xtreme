@@ -95,7 +95,7 @@
 
   <table width="100%" cellspacing="2" border="0" align="center" cellpadding="2">
     <tr> 
-      <td align="left" valign="middle" style ="width: 50;"><a href="{U_POST_NEW_TOPIC}"><img src="{POST_IMG}" border="0" alt="{L_POST_NEW_TOPIC}" /></a></td>
+      <td align="left" valign="middle" style ="width: 50px;"><a href="{U_POST_NEW_TOPIC}"><img src="{POST_IMG}" border="0" alt="{L_POST_NEW_TOPIC}" /></a></td>
       <td align="left" valign="middle" style ="width: 100%;" ><span class="nav">&nbsp;&nbsp;&nbsp;<a href="{U_INDEX}" class="nav">{L_INDEX}</a><!-- IF PARENT_FORUM --> -> <a class="nav" href="{U_VIEW_PARENT_FORUM}">{PARENT_FORUM_NAME}</a><!-- ENDIF --> -> <a class="nav" href="{U_VIEW_FORUM}">{FORUM_NAME}</a></span></td>
       <td align="right" valign="middle" nowrap="nowrap"><span class="gensmall">{S_TIMEZONE}</span><br /><table><tr><td class="nav">{PAGINATION}</td></tr></table> 
         </td>

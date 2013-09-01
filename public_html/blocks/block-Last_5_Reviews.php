@@ -33,4 +33,3 @@ while (list($id, $title, $text, $cover, $date) = $db->sql_fetchrow($result)) {
     $content .= "<img src=\"images/reviews/$cover\" width=\"$image_width\" height=\"$image_height\" /></a></td></tr></table>";
 }
 $db->sql_freeresult($result);
-?>

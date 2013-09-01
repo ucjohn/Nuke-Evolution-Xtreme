@@ -198,5 +198,3 @@ $content .= "<img src=\"images/blocks/ur-member.gif\" height=\"14\" width=\"17\"
 $content .= "<img src=\"images/blocks/ur-registered.gif\" height=\"14\" width=\"17\" alt=\"\" /> "._BTT.": <strong>$who_online_num</strong><br />\n";
 $content .= "<hr noshade='noshade' />\n<img src=\"images/blocks/group-1.gif\" height=\"14\" width=\"17\" alt=\"\" /> <strong><u>"._BON.":</u></strong><br />$who_online_now";
 $content .= "</form>";
-
-?>

@@ -33,24 +33,22 @@ $cats = $db->sql_numrows($result);
 
 $result = $db->sql_query("select t_id from ".$prefix."_tutorials_tutorials");
 $tutorials = $db->sql_numrows($result);
-$content .= "&nbsp;&nbsp;# Tutorials: <b>$tutorials</b><br>&nbsp;&nbsp;Categories: <b>$cats</b><br><br>";
-$content .= "<center><b>5&nbsp;Latest Tutorials</b></center>";
+$content .= "&nbsp;&nbsp;# Tutorials: <strong>$tutorials</strong><br>&nbsp;&nbsp;Categories: <strong>$cats</strong><br /><br />";
+$content .= "<div align=\center\"><strong>5&nbsp;Latest Tutorials</strong></div>";
 $a = 1;
 $result = $db->sql_query("select t_id, t_title, t_counter from ".$prefix."_tutorials_tutorials order by t_date DESC limit 0,5");
 
 while(list($pid, $title) = $db->sql_fetchrow($result)) {
 		$title2 = str_replace("_", " ", $title);
-	  $content .= "&nbsp;&nbsp;$a- <a href=\"modules.php?name=Tutorials&amp;t_op=showtutorial&amp;pid=$pid\">$title2</a><br>";
+	  $content .= "&nbsp;&nbsp;$a- <a href=\"modules.php?name=Tutorials&amp;t_op=showtutorial&amp;pid=$pid\">$title2</a><br />";
 		$a++;
 }
-$content .= "<br><center><b>20&nbsp;Most Popular Tutorials</b></center>";
+$content .= "<br /><div align=\center\"><strong>20&nbsp;Most Popular Tutorials</strong></div>";
 $a = 1;
 $result = $db->sql_query("select t_id, t_title, t_counter from ".$prefix."_tutorials_tutorials order by t_counter DESC limit 0,20");
 
 while(list($pid, $title, $counter) = $db->sql_fetchrow($result)) {
     $title2 = str_replace("_", " ", $title);
-    $content .= "&nbsp;&nbsp;$a- <a href=\"modules.php?name=Tutorials&amp;t_op=showtutorial&amp;pid=$pid\">$title2</a><br>[Views: <b>$counter x</b>]<br>";
+    $content .= "&nbsp;&nbsp;$a- <a href=\"modules.php?name=Tutorials&amp;t_op=showtutorial&amp;pid=$pid\">$title2</a><br />[Views: <strong>$counter x</strong>]<br />";
     $a++;
 }
-
-?>

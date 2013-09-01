@@ -131,5 +131,3 @@ if ($dummy == 1 AND is_active("Stories_Archive")) {
 if ($see == 1) {
     $content = $boxstuff;
 }
-
-?>

@@ -36,5 +36,3 @@ while (list($id, $title) = $db->sql_fetchrow($result)) {
     $content .= "<strong><big>&middot;</big></strong>&nbsp;<a href=\"modules.php?name=Reviews&amp;rop=showcontent&amp;id=$id\">$title</a><br />";
 }
 $db->sql_freeresult($result);
-
-?>

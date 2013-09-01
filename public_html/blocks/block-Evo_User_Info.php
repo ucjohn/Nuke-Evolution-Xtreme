@@ -68,5 +68,3 @@ function evouserinfo_block_display () {
 }
 
 $content = evouserinfo_block_display();
-
-?>

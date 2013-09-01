@@ -63,5 +63,3 @@ if ($numrows == 0) {
     $content = $boxstuff;
 }
 $db->sql_freeresult($result);
-
-?>

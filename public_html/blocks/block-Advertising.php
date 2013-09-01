@@ -31,5 +31,3 @@ $position = 1;
 
 // Now show it
 $content = '<br />'.ads($position).'<br />';
-
-?>
