@@ -3,3 +3,5 @@
 
 # Cache files
 zend_cache*
+tpl2_themes.*
+tpl_subSilver.*
