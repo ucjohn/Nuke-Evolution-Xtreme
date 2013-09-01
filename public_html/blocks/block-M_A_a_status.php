@@ -103,5 +103,3 @@ if ($row)
 }
 
 $content .= "</Marquee><br>";
-
-?>

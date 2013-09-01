@@ -29,9 +29,9 @@ if ($lang=='french') {
 	define("_TOOLTIPS_3","Show the profile");
 } else if ($lang=='russian') {
 	define("_WIW_TITLE","Who is Where?");
-	define("_MEMBRES","Члены");
-	define("_VISITEURS","Посетители");
-	define("_VISITEUR","Посетители");
+	define("_MEMBRES","пїЅпїЅпїЅпїЅпїЅ");
+	define("_VISITEURS","пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+	define("_VISITEUR","пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 	define("_TOOLTIPS_1","Send a Private Message");
 	define("_TOOLTIPS_3","Show the profile");
 } else if ($lang=='spanish') {
@@ -64,12 +64,12 @@ if ($lang=='french') {
 	define("_TOOLTIPS_2","Se flere detaljer");
 	define("_TOOLTIPS_3","Vis profilen");
 } else if ($lang=='thai') {
-	define("_WIW_TITLE","г¤ГНВЩи·ХидЛ№?");
-	define("_MEMBRES","КБТЄФЎ");
-	define("_VISITEURS","єШ¤¤Е·СиЗд»");
-	define("_VISITEUR","єШ¤¤Е·СиЗд»");
-	define("_TOOLTIPS_1","Ки§ўиТЗКТГКиЗ№µСЗ");
-	define("_TOOLTIPS_3","бКґ§ўйНБЩЕКиЗ№µСЗ");
+	define("_WIW_TITLE","пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅЛ№?");
+	define("_MEMBRES","пїЅпїЅТЄФЎ");
+	define("_VISITEURS","пїЅШ¤пїЅЕ·пїЅпїЅпїЅпїЅ");
+	define("_VISITEUR","пїЅШ¤пїЅЕ·пїЅпїЅпїЅпїЅ");
+	define("_TOOLTIPS_1","пїЅи§ўпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅЗ№пїЅпїЅпїЅ");
+	define("_TOOLTIPS_3","пїЅКґпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅЗ№пїЅпїЅпїЅ");
 } else {
 	define("_WIW_TITLE","Who is Where?");
 	define("_MEMBRES","Members");
@@ -151,4 +151,3 @@ if ($who_online[1] != "") {
 if (!isset($user)) {
 		//$content .= "<center>".ucfirst(_BY)." <a href=\"http://www.creation-de-site-brest.com\" target=\"_blank\">Creation site</a></center>";
 }
-?>

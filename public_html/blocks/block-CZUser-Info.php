@@ -701,5 +701,3 @@ elseif ($cz_config['czuser_online'] == 2)
 	{ 
    		$content .= czuser_online_display($czuser_online_members, $czuser_online_guests);   
  	}
- 
-?>

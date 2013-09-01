@@ -37,5 +37,3 @@ while(list($hits) = $db->sql_fetchrow($result)) {
 $db->sql_freeresult($result);
 $content .= "<img src='images/blocks/totals.png' height='16' width='16'> <strong>"._DL_TDN.":</strong><br />\n";
 $content .= "$totdld "._DL_FILESDL." $total_hits "._DL_TIMES."<br />";
-
-?>

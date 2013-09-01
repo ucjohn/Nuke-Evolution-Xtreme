@@ -101,5 +101,3 @@ if (is_admin()) {
                ."</td></tr></table>"
                ."</form>";
 }
-
-?>

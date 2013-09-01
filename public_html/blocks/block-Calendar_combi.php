@@ -315,5 +315,3 @@ if ($ievents==0){
     if (empty($icount)) { $icount = ""; }
     $blockfiletitle = _CALNEXT." $icount "._CALLISTDESCRIPTION2;
 }
-
-?>

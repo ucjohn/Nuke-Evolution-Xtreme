@@ -59,11 +59,9 @@ $lastgameid = $row['game_id'];
 $lastgamepic = $row['game_pic'];
 $lastuserid = $row['game_highuser'];
 
-$content .= "<center><strong>$lastGame</strong><br /><a href=\"modules.php?name=Forums&amp;file=games&amp;gid=$lastgameid\">";
+$content .= "<div align=\center\"v><strong>$lastGame</strong><br /><a href=\"modules.php?name=Forums&amp;file=games&amp;gid=$lastgameid\">";
 $content .= "<img src=\"modules/Forums/games/pics/$lastgamepic\" border= \"0\"></a><br /> ";
 $content .= "High Score set by <br /><strong>";
 $content .= "<a href=\"modules.php?name=Forums&amp;file=statarcade&amp;uid=$lastuserid\"><img src=\"modules/Forums/templates/subSilver/images/loupe.gif\" border= \"0\"></a> ";
 $content .= "<a href=\"modules.php?name=Forums&amp;file=profile&amp;mode=viewprofile&amp;u=$lastuserid\">$lastUser</a> ";
-$content .= "</strong><br />with <strong>$lastScore</strong></center>";
-
-?>
+$content .= "</strong><br />with <strong>$lastScore</strong></div>";

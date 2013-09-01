@@ -28,5 +28,3 @@ if (is_user()) {
 }
 
 $content = '<div align="center"><img src="images/admin/newsletter.png" alt="'._NEWSLETTER.'" title="'._NEWSLETTER.'" /><br /><br />'.$message.'<br /><br />'.$action.'</div>';
-
-?>

@@ -91,5 +91,3 @@ if (is_user()) {
 } else {
     $content .= "<br />"._YOUAREANON."</span></div>";
 }
-
-?>

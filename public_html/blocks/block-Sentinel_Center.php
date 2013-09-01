@@ -21,5 +21,3 @@ $db->sql_freeresult($result);
 if(!$total_ips) { $total_ips = 0; }
 $content .= '<center><img src="images/nukesentinel/nukesentinel_large.png" height="60" width="468" alt="'._AB_WARNED.'" title="'._AB_WARNED.'" /><br />'._AB_HAVECAUGHT.' '.intval($total_ips).' '._AB_SHAMEFULHACKERS.'</center>'."\n";
 $content .= '<hr /><center><a href="http://www.nukescripts.net" target="_blank">'._AB_NUKESENTINEL.'</a></center>'."\n";
-
-?>

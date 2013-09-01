@@ -67,14 +67,12 @@ if ( !defined('BLOCK_FILE') ) {
 	//================== END OF CONFIGURATION CODE ========================
 	
 	// Is the script improperly configured?	
-	if ($settings["serveraddress"] == "") { die("You need to configure the setting located in your admin panel..<br>\n"); }
+	if ($settings["serveraddress"] == "") { die("You need to configure the setting located in your admin panel..<br />\n"); }
 	
 	// Display the Teamspeak server
 	$content .= $teamspeakDisplay->displayTeamspeakEx($settings);
-	$content .= "</div><br>";
+	$content .= "</div><br />";
 	if ($undock == "1"){
-	$content .= "<center>[ <a href=\"javascript:popup_teamspeak()\" title=\"Undock This Block\">undock</a> ]</center>";
+	$content .= "<div align=\center\">[ <a href=\"javascript:popup_teamspeak()\" title=\"Undock This Block\">undock</a> ]</div>";
 	}
-	$content .= "<br>\n\n\n\n\n\n\n\n<!-- SourceForge TeamSpeakDisplay - converted for phpNuke use by Fusion\n   tsdisplay.sourceforge.net   www.artofgaming.co.uk   www.evolutionclans.com  -->\n\n\n\n\n\n\n\n";
-
-?>
+	$content .= "<br />\n\n\n\n\n\n\n\n<!-- SourceForge TeamSpeakDisplay - converted for phpNuke use by Fusion\n   tsdisplay.sourceforge.net   www.artofgaming.co.uk   www.evolutionclans.com  -->\n\n\n\n\n\n\n\n";

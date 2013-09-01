@@ -230,5 +230,3 @@ if(is_admin()) {
     $moduleblock_invisible_links = moduleblock_get_inactive_links();
     moduleblock_display_inactive();
 }
-
-?>

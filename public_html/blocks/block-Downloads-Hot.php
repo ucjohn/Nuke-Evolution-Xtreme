@@ -29,5 +29,3 @@ $db->sql_freeresult($result);
 if ($scron == 1) {
     $content .= "</marquee>";
 }
-
-?>

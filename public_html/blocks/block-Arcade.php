@@ -58,10 +58,10 @@ $lastgamepic = $row['game_pic'];
 $lastuserid = $row['game_highuser'];
 
 $count = 1;
-$content = "<center><a href=\"modules.php?name=Forums&amp;file=arcade\"><img src=\"images/arcadelogo.gif\" border= \"0\"></a></center><br />";
+$content = "<div align=\center\"><a href=\"modules.php?name=Forums&amp;file=arcade\"><img src=\"images/arcadelogo.gif\" border= \"0\"></a></div><br />";
 $content .="<marquee behavior= \"scroll\" align= \"center\" direction= \"up\" height=\"160\" scrollamount= \"2\" scrolldelay= \"20\" onmouseover='this.stop()' onmouseout='this.start()'>";
 
-$content .= "<center><a href=\"modules.php?name=Forums&amp;file=games&amp;gid=$lastgameid\">";
+$content .= "<div align=\center\"><a href=\"modules.php?name=Forums&amp;file=games&amp;gid=$lastgameid\">";
 $content .= "<img src=\"modules/Forums/games/pics/$lastgamepic\" border= \"0\"></a><br /> ";
 $content .= "Latest High Score set by <br /><strong>";
 $content .= "<a href=\"modules.php?name=Forums&amp;file=statarcade&amp;uid=$lastuserid\"><img src=\"modules/Forums/templates/subSilver/images/loupe.gif\" border= \"0\"></a> ";
@@ -105,6 +105,4 @@ while ($row = $db->sql_fetchrow($result)) {
         $count = $count + 1;
 }
 
-$content .= "</span></center></marquee>"
-
-?>
+$content .= "</span></div></marquee>"

@@ -25,8 +25,8 @@ get_lang('Supporters');
 global $prefix, $db, $user, $admin, $admin_file, $cache;
 
 if(!isset($admin_file)) { $admin_file = "admin"; }
-$content = "<center>"._SP_SUPPORTEDBY."<br /><br />";
-$content .= "<marquee behavior='scroll' direction='down' height='150' scrollamount='3' scrolldelay='90' width='100' onmouseover='this.stop()' onmouseout='this.start()'><center>\n";
+$content = "<div align=\center\">"._SP_SUPPORTEDBY."<br /><br />";
+$content .= "<marquee behavior='scroll' direction='down' height='150' scrollamount='3' scrolldelay='90' width='100' onmouseover='this.stop()' onmouseout='this.start()'><div align=\center\">\n";
 $result = $db->sql_query("SELECT `site_id`, `site_name`, `site_url`, `site_image`, `site_date`, `site_description`, `site_hits` FROM `".$prefix."_nsnsp_sites` WHERE `site_status`>'0' ORDER BY `site_name` DESC");
 if ((($image_atts = $cache->load('image_atts', 'nsnsp')) === false) || empty($image_atts)) {
     $image_atts = array();
@@ -65,9 +65,7 @@ for ($i=0, $max=count($image_atts); $i<$max; $i++) {
   if($height > $sp_config['max_height']) { $height = $sp_config['max_height']; }
   $content .= "<a href='modules.php?name=Supporters&amp;op=SPGo&amp;site_id=$site_id'><img src='$site_image' height='$height' width='$width' title='$site_name' alt='$site_name' border='0' /></a><br /><br />\n";
 }
-$content .="</center></marquee></center>\n";
+$content .="</div></marquee></br>\n";
 if($sp_config['require_user'] == 0 || is_user()) { $content .= "[ <a href='modules.php?name=Supporters&amp;op=SPSubmit'>"._SP_BESUPPORTER."</a> ]<br />\n"; }
 if(is_admin()) { $content .= "[ <a href='".$admin_file.".php?op=SPMain'>"._SP_GOTOADMIN."</a> ]<br />\n"; }
-$content .= "[ <a href='modules.php?name=Supporters'>"._SP_SUPPORTERS."</a> ]</center>\n";
-
-?>
+$content .= "[ <a href='modules.php?name=Supporters'>"._SP_SUPPORTERS."</a> ]</div>\n";

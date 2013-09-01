@@ -38,5 +38,3 @@ while (list($lid, $title) = $db->sql_fetchrow($result)) {
     $a++;
 }
 $db->sql_freeresult($result);
-
-?>

@@ -28,5 +28,3 @@ global $prefix, $startdate, $db;
 
 list($hits) = $db->sql_fetchrow($db->sql_query("SELECT count FROM ".$prefix."_counter WHERE type='total' AND var='hits'"));
 $content = "<center><span class=\"tiny\">"._WERECEIVED."<br /><strong><a href=\"modules.php?name=Statistics\">$hits</a></strong><br />"._PAGESVIEWS." $startdate</span></center>";
-
-?>

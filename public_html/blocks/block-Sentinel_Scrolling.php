@@ -39,5 +39,3 @@ while (list($ip_addr, $ip_reason) = $db->sql_fetchrow($result)) {
 $db->sql_freeresult($result);
 $content .= '</div></div></center>'."\n";
 $content .= '<hr /><center><a href="http://www.nukescripts.net" title="'._AB_AVAILABLEAT.'" target="_blank">'._AB_NUKESENTINEL.'</a></center>'."\n";
-
-?>

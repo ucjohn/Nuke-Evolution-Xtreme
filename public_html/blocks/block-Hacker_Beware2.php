@@ -36,5 +36,3 @@ if(is_admin()) {
 }
 $content  = "<center><img src=\"images/nukesentinel/Sentinel_Medium.png\" alt=\" "._AB_WARNED."\" title=\" "._AB_WARNED."\"><br />"._AB_CAUGHT." ".$total_ips." "._AB_SHAME."</center>";
 $content .= "<hr /><center><a href=\"http://www.nukescripts.net\">"._AB_NUKESENTINEL." ".$ab_config['version_number']."</a></center>\n";
-
-?>

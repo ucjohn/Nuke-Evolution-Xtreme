@@ -37,5 +37,3 @@ $content .= "<a href=\"http://www.dadanuke.org\" target=\"_blank\"><img src=\"im
 $content .= "<a href=\"http://www.website-portals.net\" target=\"_blank\"><img src=\"images/evo/cmsrev.jpg\" alt=\"\" border=\"0\" /></a>&nbsp;";
 $content .= "<a href=\"http://www.evo-install.com\" target=\"_blank\"><img src=\"images/evo/evo-install.jpg\" alt=\"\" border=\"0\" /></a>&nbsp;";
 $content .= "</marquee>";
-
-?>
