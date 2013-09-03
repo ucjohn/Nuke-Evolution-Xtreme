@@ -5,3 +5,13 @@
 zend_cache*
 tpl2_themes.*
 tpl_subSilver.*
+
+# Log files
+admin.log
+error.log
+error_log
+
+# Core files
+public_html/.htaccess
+sitemap.xml
+ultramode.txt
