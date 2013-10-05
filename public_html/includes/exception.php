@@ -136,7 +136,7 @@ function printException(Exception $e) {
     </head>
     <body>
 
-        <h1>Uncaught <strong><?php echo (defined(get_class($e).'::EXCEPTION_NAME') ? $e::EXCEPTION_NAME.' ' : ''); ?></strong>Exception Has Occurred!</h1>
+        <h1>Uncaught <strong><?php echo (defined(get_class($e) . '->EXCEPTION_NAME') ? $e->EXCEPTION_NAME . ' ' : ''); ?></strong>Exception Has Occurred!</h1>
         <dl>
             <dt>Message:</dt>
             <dd><?php echo $e->getMessage(); ?></dd>
