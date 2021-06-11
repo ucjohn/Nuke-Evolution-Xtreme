@@ -28,8 +28,7 @@ While Nuke Evolution Xtreme uses the same core as Nuke Evolution Basic there hav
 
 ##### NOTE
 
-[Fresh install](http://evolution-xtreme.com/modules.php?name=Screen_Casts&act=view&sc=1)  
-[Upgrade](http://evolution-xtreme.com/modules.php?name=Screen_Casts&act=view&sc=29)
+
 
 ## Security
 
@@ -53,5 +52,4 @@ If you have any suggestions, feedback or ideas you feel will be a nice contribut
 
 Thanks for using our enhanced PHP-Nuke Web Portal System and we hope you enjoy it :)
 
-**The Nuke Evolution Xtreme team**  
-[http://www.evolution-xtreme.com](http://www.evolution-xtreme.com/)
+**The Nuke Evolution Xtreme team** 
