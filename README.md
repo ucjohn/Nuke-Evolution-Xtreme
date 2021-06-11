@@ -38,7 +38,7 @@ Hopefully you will never have to visit the admin panel for Nuke Sentinel (tm) as
 
 ## Help
 
-If you are having issues with your install please do no hesitate to visit our [forums](http://www.evolution-xtreme.com/modules.php?name=Forums)
+If you are having issues with your install... add me on discord: DJ UCJOHN#6621
 
 ## Feedback, Bugs and Improvements
 
